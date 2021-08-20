@@ -11,7 +11,13 @@ const setupInput = function(conn) {
     if (key === '\u0003') {
       process.exit();
     } else if (key === 'w') {
+      conn.write('Move: up');
+    } else if (key === 'a') {
+      conn.write('Move: left');
+    } else if (key === 's') {
       conn.write('Move: down');
+    } else if (key === 'd') {
+      conn.write('Move: right');
     }
     
     

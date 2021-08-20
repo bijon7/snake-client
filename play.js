@@ -7,5 +7,6 @@ const conn = connect();
 
 
 setupInput(conn);
+connect();
 module.exports = { connect };
 
