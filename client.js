@@ -15,11 +15,17 @@ const connect = function () {
   });
   conn.on('connect', () => {
     conn.write('Successfully connected to server!');
+    conn.write('Name: ZM');
   })
-  conn.on('connect', () => {
-     conn.write('Name : ZM');
-  });
-
+//   conn.on('connect', () => {
+//      conn.write('Name: ZM');
+//   });
+//   conn.on('connect', () => {
+//     conn.write("Move: up");
+//  });
+//  conn.on('connect', () => {
+//   conn.write("Move: up");
+// });
   return conn;
 }
 
