@@ -18,6 +18,9 @@ const setupInput = function(conn) {
       conn.write('Move: down');
     } else if (key === 'd') {
       conn.write('Move: right');
+    } else if (key === "1") {
+
+      conn.write('Say: Hello, I\'m here!');
     }
     
     

@@ -16,7 +16,7 @@ const connect = function () {
   });
   conn.on('connect', () => {
     conn.write('Successfully connected to server!');
-    conn.write('Name: ZM');
+    conn.write('Name: ZM\n');
     conn.write('Say: Hello everyone!');
   })
 
