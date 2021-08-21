@@ -1,3 +1,6 @@
+// This program defines keyboard commands from the player and also uses
+// conn object returned from connect function to establish connection with
+//the server.
 const { connect } = require('./client');
 let connection;
 const setupInput = function(conn) {
